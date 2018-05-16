@@ -1,9 +1,3 @@
-/*
-	Snapshot by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
 (function($) {
 
 	skel.breakpoints({
@@ -43,7 +37,7 @@
 			$('.scrolly').scrolly();
 
 		// Gallery.
-			$('.gallery').each(function() {
+			$('.gallery').not(project_title).each(function() {
 
 				var	$gallery = $(this),
 					$content = $gallery.find('.content');
