@@ -1,3 +1,7 @@
+.gallery .content .media a {
+    outline: none;
+}
+
 .gallery .content .media p {
     text-align: center;
 }
@@ -24,6 +28,10 @@
     background: #333;
 }
 
+.button.alt.scrolly.big {
+    outline: none;
+}
+
 .submit {
     background: #d4a259 !important;
 }
@@ -40,10 +48,20 @@
     color: #a98147;
 }
 
+
 .project_title > a {
     color: #d4a259;
+    outline: none;
 }
 
 .project_title > a:hover {
-    color: #a98147;;
+    color: #a98147;
+}
+
+.form_control {
+    color: #000;
+}
+
+.form_control label {
+    color: #fff;
 }

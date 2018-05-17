@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0; }
 
+.gallery .content .media a {
+  outline: none; }
+
 .gallery .content .media p {
   text-align: center; }
 
@@ -24,6 +27,9 @@
 #explore {
   background: #333; }
 
+.button.alt.scrolly.big {
+  outline: none; }
+
 .submit {
   background: #d4a259 !important; }
 
@@ -37,10 +43,17 @@
   color: #a98147; }
 
 .project_title > a {
-  color: #d4a259; }
+  color: #d4a259;
+  outline: none; }
 
 .project_title > a:hover {
   color: #a98147; }
+
+.form_control {
+  color: #000; }
+
+.form_control label {
+  color: #fff; }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -458,7 +471,7 @@ textarea {
   -ms-appearance: none;
   appearance: none;
   border-radius: 4px;
-  border: solid 1px rgba(25, 181, 254, 0.25);
+  border: solid 1px rgba(212, 162, 89, 0.25);
   color: inherit;
   display: block;
   outline: 0;
@@ -482,7 +495,7 @@ select:active,
 select:focus,
 textarea:active,
 textarea:focus {
-  border: solid 1px #19B5FE; }
+  border: solid 1px #d4a259; }
 
 .select-wrapper {
   text-decoration: none;
