@@ -5,3 +5,45 @@
 .gallery .content .media a {
     text-decoration: none;
 }
+
+#contact .column.social {
+    background: #1d1d1d !important;
+    color: #fff;
+}
+
+#contact .column.message {
+    background: #4a4a4a;
+    color: #fff;
+}
+
+#galleries {
+    color: #fff;
+}
+
+#explore {
+    background: #333;
+}
+
+.submit {
+    background: #d4a259 !important;
+}
+
+.submit:hover {
+    background: #a98147 !important;
+}
+
+.icon {
+    color: #d4a259;
+}
+
+.icon:hover {
+    color: #a98147;
+}
+
+.project_title > a {
+    color: #d4a259;
+}
+
+.project_title > a:hover {
+    color: #a98147;;
+}

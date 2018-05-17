@@ -10,6 +10,38 @@
 .gallery .content .media a {
   text-decoration: none; }
 
+#contact .column.social {
+  background: #1d1d1d !important;
+  color: #fff; }
+
+#contact .column.message {
+  background: #4a4a4a;
+  color: #fff; }
+
+#galleries {
+  color: #fff; }
+
+#explore {
+  background: #333; }
+
+.submit {
+  background: #d4a259 !important; }
+
+.submit:hover {
+  background: #a98147 !important; }
+
+.icon {
+  color: #d4a259; }
+
+.icon:hover {
+  color: #a98147; }
+
+.project_title > a {
+  color: #d4a259; }
+
+.project_title > a:hover {
+  color: #a98147; }
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -273,15 +305,15 @@ input[type="button"].alt,
 button.alt,
 .button.alt {
   background: none;
-  box-shadow: 0 0 0 2px rgba(144, 144, 144, 0.25); }
+  box-shadow: 0 0 0 2px rgba(255, 255, 144, 0.25); }
 
 input[type="submit"].alt:hover,
 input[type="reset"].alt:hover,
 input[type="button"].alt:hover,
 button.alt:hover,
 .button.alt:hover {
-  background: rgba(144, 144, 144, 0.075);
-  box-shadow: 0 0 0 2px rgba(144, 144, 144, 0.25); }
+  background: rgba(255, 255, 144, 0.075);
+  box-shadow: 0 0 0 2px rgba(255, 255, 144, 0.25); }
 
 input[type="submit"].icon,
 input[type="reset"].icon,
@@ -1201,7 +1233,7 @@ body.is-loading #banner > .inner {
 /* Footer */
 #footer {
   padding: 4em 0 2em 0;
-  background: #f2f2f2; }
+  background: #606060; }
 
 #footer .copyright {
   color: #bfbfbf;
