@@ -43,9 +43,6 @@
 #galleries {
   color: #fff; }
 
-.media {
-  border-radius: 10%; }
-
 #explore {
   background: #333; }
 
@@ -82,6 +79,46 @@
 
 .social a:hover {
   color: #a98147; }
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #d4a259;
+  background: rgba(212, 162, 89, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#return-to-top:hover {
+  background: rgba(212, 162, 89, 0.9); }
+
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px; }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -734,7 +771,7 @@ input[type="radio"] + label:before {
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   -ms-transition: -ms-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   vertical-align: middle; }
 
