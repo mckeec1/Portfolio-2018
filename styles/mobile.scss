@@ -1,0 +1,13 @@
+@media only screen and (max-width: 480px) {
+    .box_description p {
+        width: 375px !important;
+        text-align: left !important;
+        padding-left: 0em;
+        padding-right: 3em;
+        font-size: 16px;
+    }
+
+    .box_description h3 {
+        text-align: left !important;
+    }
+}
