@@ -74,6 +74,10 @@ h1 {
     max-height: 225px;
 }
 
+.mobile_logo {
+    display: none !important;
+}
+
 @media only screen and (max-width: 400px) {
     .flex-grid {
       display: block;
@@ -95,5 +99,13 @@ h1 {
 
     .enter_link {
         padding: 0em;
+    }
+
+    .logo_large {
+        display: none !important;
+    }
+
+    .mobile_logo {
+        display: block !important;
     }
   }
