@@ -53,6 +53,12 @@ h1 {
   padding: 0.5em;
   font-family: 'Nobile', sans-serif; }
 
+.logo img {
+  display: block;
+  margin: auto;
+  max-width: 225px;
+  max-height: 225px; }
+
 @media only screen and (max-width: 400px) {
   .flex-grid {
     display: block; } }
