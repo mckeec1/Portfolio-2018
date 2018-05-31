@@ -35,6 +35,14 @@
 .gallery .content .media a {
   text-decoration: none; }
 
+.rotate {
+  transform: perspective(1) scaleZ(1) rotateY(0deg);
+  transition: transform 0.5s ease; }
+
+.box_logo:hover .rotate {
+  transform: perspective(500px) scaleZ(2) rotateY(180deg);
+  cursor: pointer; }
+
 footer img {
   max-width: 100px;
   max-height: 100px;
