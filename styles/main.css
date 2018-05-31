@@ -19,6 +19,9 @@
   left: -3px;
   text-shadow: 1px 1px #d4a259,  2px 2px #d4a259,  3px 3px #d4a259,  4px 4px #d4a259,  5px 5px #d4a259,  6px 6px #d4a259; }
 
+#return-to-top {
+  outline: none; }
+
 .letterpress {
   color: #aaa;
   text-shadow: 0px 2px 3px #000; }
@@ -31,6 +34,12 @@
 
 .gallery .content .media a {
   text-decoration: none; }
+
+footer img {
+  max-width: 100px;
+  max-height: 100px;
+  margin: auto;
+  display: block; }
 
 #contact .column.social {
   background: #1d1d1d !important;
