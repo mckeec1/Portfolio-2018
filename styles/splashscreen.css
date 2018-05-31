@@ -80,12 +80,20 @@ h1 {
     padding-left: 0em; }
 
   .enter_link {
-    padding: 0em; }
+    background-color: #000;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 5px; }
 
   .logo_large {
     display: none !important; }
 
   .mobile_logo {
-    display: block !important; } }
+    display: block !important; }
+
+  .enter_link:hover > .fa {
+    color: #fff; } }
 
 /*# sourceMappingURL=splashscreen.css.map */
