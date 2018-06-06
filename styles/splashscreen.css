@@ -53,7 +53,7 @@ h1 {
   padding: 0.5em;
   font-family: 'Nobile', sans-serif; }
 
-.enter_link:hover > .fas {
+.enter_link:hover > .fa {
   color: #000; }
 
 .logo img {
@@ -71,7 +71,9 @@ h1 {
 @media only screen and (max-width: 480px) {
   body {
     background-size: cover;
-    background-position: 35% 50%; }
+    background-position: 35% 50%;
+    overflow: hidden;
+    -moz-overflow: hidden; }
 
   .row {
     width: 100vw;
@@ -94,6 +96,9 @@ h1 {
     display: block !important; }
 
   .enter_link:hover > .fa {
-    color: #fff; } }
+    color: #fff; }
+
+  .mobile_none {
+    display: none; } }
 
 /*# sourceMappingURL=splashscreen.css.map */
