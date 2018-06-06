@@ -7,9 +7,8 @@ if(isset($_POST['submit'])){
     $subject = "Form submission";
     $message = $name. " wrote the following:" . "\n\n" . $_POST['message'];
     $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2);
+    mail($from,);
     echo "Mail Sent. Thank you " . $name . ", I will contact you shortly!";
     }
 ?>
