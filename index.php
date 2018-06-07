@@ -8,19 +8,27 @@
 
 		<link rel="stylesheet" href="styles/main.css">
 
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" crossorigin="anonymous">
+        
+        <script>
+
+        function validateForm() {
+            var x = document.contact.name["form"]["name"].value;
+            if (x == "") {
+            alert("Name must be filled out.");
+            return false;
+        }
+
+            var y = document.contact.email["form"]["email"].value;
+            if (y == "") {
+            alert("Email must be filled out.");
+            return false; 
+        }
+    }
+        </script>	
     </head>
 	<body>
 			<div class="page-wrap">
-				<!-- Nav -->
-					<!--<nav id="nav">
-						<ul>
-							<li><a href="index.html" class="active"><span class="icon fa-home"></span></a></li>
-							<li><a href="gallery.html"><span class="icon fa-camera-retro"></span></a></li>
-							<li><a href="generic.html"><span class="icon fa-file-text-o"></span></a></li>
-						</ul>
-					</nav> -->
-	
 				<!-- Main -->
 					<section id="main">
 	
@@ -112,7 +120,7 @@
 								<!-- Form -->
 									<div class="column message" id="form_link">
 										<h3>Get in Touch</h3>
-										<form class="form_control" action="form-send.php" method="post" onsubmit="return validateMyForm();">
+										<form class="form_control" name="contact" action="form-send.php" method="post" onsubmit="return validateForm();">
 											<div class="field half first">
 												<label for="name">Name</label>
 												<input class="outline_color" name="name" id="name" type="text" placeholder="Name">
@@ -127,7 +135,7 @@
 											</div>
 											<div style="display:none;">
 													<label>Keep this field blank</label>
-													<input type="text" name="honeypot" id="honeypot" />
+													<input type="text" name="website" id="honeypot" />
 												 </div>
 											<ul class="actions">
 												<li><input value="Send Message" class="button submit" type="submit"></li>
@@ -157,8 +165,7 @@
 				<script src="scripts/skel.min.js"></script>
 				<script src="scripts/util.js"></script>
 				<script src="scripts/main.js"></script>
-				<script src="scripts/btn.js"></script>
-				<script src="scripts/honeypot.js"></script>		
+				<script src="scripts/btn.js"></script>	
 				<script src=”//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js”></script>
 	</body>
 </html>

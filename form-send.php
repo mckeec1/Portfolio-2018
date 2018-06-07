@@ -11,4 +11,6 @@
     $headers = "From:" . $from;
     mail($to,$subject,$message, $headers);
     echo "Thank you for contacting me! I will get back to you shortly.";
+
+    if(!empty($_POST['website'])) die();
 ?>
