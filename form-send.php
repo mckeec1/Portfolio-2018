@@ -1,14 +1,14 @@
 <?php 
-if(isset($_POST['submit'])){
-    $to = "connermckee01@gmail.com"; 
-    $from = $_POST['email']; 
-    $name = $_POST['name'];
-    $messages = $_POST['message'];
-    $subject = "Form submission";
-    $message = $name. " wrote the following:" . "\n\n" . $_POST['message'];
+    ini_set( 'display_errors', 1 );
+    error_reporting( E_ALL );
+    $from = "form-submission@cpmckee.info";
+    $to = "connermckee01@gmail.com";
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $messages = $_POST["message"];
+    $message = "Email: $email, Message: $messages";
+    $subject = "Contact Form From: $name";
     $headers = "From:" . $from;
-    mail($to,$subject,$message,$headers);
-    mail($from,);
-    echo "Mail Sent. Thank you " . $name . ", I will contact you shortly!";
-    }
+    mail($to,$subject,$message, $headers);
+    echo "Thank you for contacting me! I will get back to you shortly.";
 ?>

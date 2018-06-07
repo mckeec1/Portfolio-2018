@@ -9,21 +9,7 @@
 		<link rel="stylesheet" href="styles/main.css">
 
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" crossorigin="anonymous">
-	</head>
-	<?php 
-if(isset($_POST['submit'])){
-    $to = "connermckee01@gmail.com"; 
-    $from = $_POST['email']; 
-    $name = $_POST['name'];
-    $messages = $_POST['message'];
-    $subject = "Form submission";
-    $message = $name. " wrote the following:" . "\n\n" . $_POST['message'];
-    $headers = "From:" . $from;
-    mail($to,$subject,$message,$headers);
-    mail($from,);
-    echo "Mail Sent. Thank you " . $name . ", I will contact you shortly!";
-    }
-?>
+    </head>
 	<body>
 			<div class="page-wrap">
 				<!-- Nav -->
@@ -126,7 +112,7 @@ if(isset($_POST['submit'])){
 								<!-- Form -->
 									<div class="column message" id="form_link">
 										<h3>Get in Touch</h3>
-										<form class="form_control" method="post" onsubmit="return validateMyForm();">
+										<form class="form_control" action="form-send.php" method="post" onsubmit="return validateMyForm();">
 											<div class="field half first">
 												<label for="name">Name</label>
 												<input class="outline_color" name="name" id="name" type="text" placeholder="Name">
