@@ -12,8 +12,6 @@ if (isset($_POST['name'], $_POST['email'], $_POST['message']))
     $message = "Email: $email, Message: $messages";
     $subject = "Contact Form From: $name";
     $headers = "From:" . $from;
-    mail($to,$subject,$message, $headers);
-
     if ($emailSent = mail($to,$subject,$message,$headers)) 
         $msg="I have received your email and will contact you shortly, thank you!";
 
