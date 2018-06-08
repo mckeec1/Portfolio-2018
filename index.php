@@ -1,3 +1,26 @@
+<?php 
+if (isset($_POST['name'], $_POST['email'], $_POST['message']))
+    { 
+    ini_set( 'display_errors', 1 );
+    error_reporting( E_ALL );
+    $emailSent = FALSE;
+    $from = "form-submission@cpmckee.info";
+    $to = "connermckee01@gmail.com";
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $messages = $_POST["message"];
+    $message = "Email: $email, Message: $messages";
+    $subject = "Contact Form From: $name";
+    $headers = "From:" . $from;
+    mail($to,$subject,$message, $headers);
+
+    if ($emailSent = mail($to,$subject,$message,$headers)) 
+        $msg="I have received your email and will contact you shortly, thank you!";
+
+    if(!empty($_POST['website'])) die();
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -119,8 +142,9 @@
 	
 								<!-- Form -->
 									<div class="column message" id="form_link">
-										<h3>Get in Touch</h3>
-										<form class="form_control" name="contact" action="form-send.php" method="post" onsubmit="return validateForm();">
+                                        <h3>Get in Touch</h3>
+                                       <?php if ($emailSent == FALSE) : ?>
+										<form class="form_control" name="contact" action="#form_link" method="post" onsubmit="return validateForm();">
 											<div class="field half first">
 												<label for="name">Name</label>
 												<input class="outline_color" name="name" id="name" type="text" placeholder="Name">
@@ -140,7 +164,8 @@
 											<ul class="actions">
 												<li><input value="Send Message" class="button submit" type="submit"></li>
 											</ul>
-										</form>
+                                        </form>
+                                        <?php endif; ?>
 									</div>
 	
 							</section>
