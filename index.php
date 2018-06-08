@@ -166,6 +166,7 @@ if (isset($_POST['name'], $_POST['email'], $_POST['message']))
 											</ul>
                                         </form>
                                         <?php endif; ?>
+                                        <?php if (count($_POST)>0) echo "Thanks for contacting me, I will respond shortly!";?>
 									</div>
 	
 							</section>
