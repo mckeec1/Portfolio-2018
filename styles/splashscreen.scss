@@ -8,11 +8,11 @@
 body {
     height:100%;
     width:100%;
-    background-image:url(../images/splash_screen.png);  
+    background-image:url(https://dl.dropboxusercontent.com/s/e6pqm8yr21dcsvu/splash_screen.png?dl=0);  
     background-repeat:no-repeat;  
     background-size:cover;
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/splash_screen.png',sizingMethod='scale');
-    -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/splash_screen.png',sizingMethod='scale')";
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://dl.dropboxusercontent.com/s/e6pqm8yr21dcsvu/splash_screen.png?dl=0',sizingMethod='scale');
+    -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://dl.dropboxusercontent.com/s/e6pqm8yr21dcsvu/splash_screen.png?dl=0',sizingMethod='scale')";
     overflow: hidden;
  }
 
