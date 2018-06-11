@@ -173,7 +173,7 @@ if (isset($_POST['name'], $_POST['email'], $_POST['message']))
 											</ul>
                                         </form>
                                         <?php endif; ?>
-                                        <?php if (count($_POST)>0) echo "Thanks for contacting me, I will respond shortly!";?>
+                                        <?php if (count($_POST)>0) echo "<h2>Thanks for contacting me!</h2>";?>
 									</div>
 	
 							</section>
